@@ -31,12 +31,14 @@ def input_to_index(input)
 input_to_index = input.to_i
 index = input_to_index - 1
 end
+
   def update_array_at_with(board, index, value)
   board[index] = value
-  #end
-  update_array_at_with(board, index, "X")
-  display_board(board)
-end
+  end
+  
+  def move(board, index, value="X")
+  update_array_at_with(board, index, value)
+  end
 
 #turn
 def turn(board)
@@ -44,10 +46,10 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   move = valid_move?(board, index)
-  #if move == true
-    update_array_at_with(board, index, "X")
-  #else
-  #  puts "Invalid move, please try again:"
-  #  bin/turn
-  #end
+  if move == true
+    move(board, index, value)
+  else
+    puts "Invalid move, please try again:"
+    bin/turn
+  end
 end
