@@ -50,6 +50,6 @@ def turn
     move(board, index)
   else
     puts "Please enter 1-9:"
-    bin/turn
+    turn
   end
 end
