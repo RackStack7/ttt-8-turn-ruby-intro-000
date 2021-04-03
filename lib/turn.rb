@@ -47,7 +47,7 @@ def turn(board)
   index = input_to_index(input)
   move = valid_move?(board, index)
   if move == true
-    move(board, index, value)
+    move(board, index)
   else
     puts "Invalid move, please try again:"
     bin/turn
