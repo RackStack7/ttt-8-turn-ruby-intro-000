@@ -35,7 +35,7 @@ end
   def update_array_at_with(board, index, value)
   board[index] = value
   end
-  
+
   def move(board, index, value="X")
   update_array_at_with(board, index, value)
   end
