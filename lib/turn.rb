@@ -49,7 +49,6 @@ def turn
   if move == true
     move(board, index)
   else
-    puts "Please enter 1-9:"
     turn
   end
 end
