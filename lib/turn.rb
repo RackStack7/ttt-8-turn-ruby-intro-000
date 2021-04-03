@@ -49,7 +49,7 @@ def turn(board)
   if move == true
     move(board, index)
   else
-    puts "Invalid move, please try again:"
+    puts "PLease enter 1-9:"
     bin/turn
   end
 end
